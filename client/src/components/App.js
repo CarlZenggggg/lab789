@@ -8,12 +8,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App () {
   const [user, setUser] = useState(false);
-
-
   return (
     <React.Fragment>
+      <ToastContainer/>
       <Nav/>
-      <Routes setUser={setUser}/>
+      <Routes user={user} setUser={setUser}/>
     </React.Fragment>
   );
 };

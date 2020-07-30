@@ -10,7 +10,7 @@ exports.new = (req, res) => {
 };
 
 exports.create = (req, res, next) => {
-  return res.status(200).json({...req.body, message:"Logged in successfully"});
+  console.log(req.body);
   passport.authenticate('local', (err, user) => {
     if (err || !user) return res.status(401).json({
       status: 'failed',

@@ -4,7 +4,7 @@ import Axios from 'axios';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 
-const Index = function ({user}) {
+const Index = function ({user,setUser}) {
 
   const [blogs, setBlogs] = useState([]);
 
