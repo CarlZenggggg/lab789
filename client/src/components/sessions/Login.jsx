@@ -18,7 +18,7 @@ const Login = ({setUser}) => {
 
     try {
       const resp = await Axios.post('/api/authenticate', inputs);
-
+      console.log(resp);
       if (resp.status === 200) {
         setUser(resp.data.user);
         toast('You have logged in successfully', {

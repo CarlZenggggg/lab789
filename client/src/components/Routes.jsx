@@ -21,20 +21,21 @@ function Routes ({user, setUser}) {
           setUser={setUser}
         />
       }/>
-      <Route exact path="/logout" render={
+      { <Route exact path="/logout" render={
         renderProps => <Logout
           {...renderProps}
           setUser={setUser}
         />
-      }/>
-      <Route exact path="/blogs" render={
+      }/> }
+
+      { <Route exact path="/blogs" render={
         renderProps => <Blogs
           {...renderProps}
           user={user}
         />
-      }/>
-      <Route exact path="/blogs/new" components={NewBlog}/>
-      <Route exact path="/blogs/edit" components={EditBlog}/>
+      }/> }
+      <Route exact path="/blogs/new" component={NewBlog}/>
+      <Route exact path="/blogs/edit" component={EditBlog}/>
     </Switch>
   );
 }
