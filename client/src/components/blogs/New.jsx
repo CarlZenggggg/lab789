@@ -96,6 +96,7 @@ const New = function () {
             <button type="submit" className="btn btn-primary">Create</button>
           </Form.Group>
         </Form>
+        
       </div>
     </Container>
   );
